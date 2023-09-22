@@ -1,0 +1,41 @@
+<!-- NOTIF_BIS_PDN_NOTPOOL_GAGAL.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        text-align: center;
+      }
+
+      td {
+        text-align: left;
+      }
+
+      td,
+      th {
+        border: 1px solid #000000;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Berikut transaksi jual/beli valuta asing Notional Pooling yang gagal
+      diproses oleh MSS : <span></span>
+    </p>
+    <p th:utext="${ind.param_table}"></p>
+    <br />
+  </body>
+</html>
